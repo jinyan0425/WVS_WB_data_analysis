@@ -30,13 +30,16 @@ The data collection and wrangling refer to the Python Notebook ```wvs_wb_data_pr
 I employed the three-level multi-level modeling, treating individual responses (level 3, N refers to the table above) as nested in country-year (level 2, N = 80), which were themselves nested countries (level 1 factor, N = 49). The focal predictor is the country-year Gini index at level 2 and the focal outcome variable is the trust (in various aspects) at level 1. Meanwhile, we included country-year covariates at level 2 and individual-level covariates at level 3. Formally:
 The equation is given by:
 
-$Trust_{ikl} = β_{000} + β_{100} * SCO_{ikl} + β_{200} * Age_{ikl} + β_{300} * Gender_{ikl} + β_{400} * Marital_{ikl} + β_{500} * Employment_{ikl} + β_{600} * M_{ikl} + β_{700} * Education_{ikl} + β_{800} * Ideogloy_{ikl} + β_{010} * GINI_{kl} + β_{020} * Gdp_{ikl} + β_{030} * Population_{kl} + β_{040} * Density_{kl} + β_{050} * Poverty_{kl} + β_{060} * Unemploymen_{tkl}  + β_{070} * Year_{kl}  + v_{l} + u_{kl} + e_{ikl}$
-
+$Trust_{ikl} = β_{000} + β_{100} * SCO_{ikl} + β_{200} * Age_{ikl} + β_{300} * Gender_{ikl} + β_{400} * Marital_{ikl}$ 
+                      $+ β_{500} * Employment_{ikl} + β_{600} * M_{ikl} + β_{700} * Education_{ikl} + β_{800} * Ideogloy_{ikl}$ 
+                      $+ β_{010} * GINI_{kl} + β_{020} * Gdp_{ikl} + β_{030} * Population_{kl} + β_{040} * Density_{kl}$ 
+                      $+ β_{050} * Poverty_{kl} + β_{060} * Unemploymen_{tkl} + β_{070} * Year_{kl}$ 
+                      $+ v_{l} + u_{kl} + e_{ikl}$
 Where:
 - $Y_{ijk}$ is the trust score of the `i`th individual in the `k`th country-year of the `j`th country.
-- $v_{l}$ is the level 1 residuals.
+- $v_{l}$ is the level 3 residuals.
 - $u_{kl}$ is the level 2 residuals.
-- $_{ijk}$ is the leve l1 residuals.
+- $_{ijk}$ is the level 1 residuals.
 
 The data analysis refers to the R script```wvs_wb_data_analysis```.
 
