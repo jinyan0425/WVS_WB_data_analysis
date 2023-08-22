@@ -42,11 +42,13 @@ $Trust_{ikl} = β_{000} + β_{010}*Gini_{kl} * β_{m00} * L1COV_{ikl} + β_{0n0}
 
 
 Where:
-- $Y_{ijk}$ is the trust score of the $i$ th individual in the $k$ th country-year of the $j$ th country.
-- $m$ represents the $m$ th level 1 covariates ($m$ = 1, 2, ..., 8).
-- $n$ represents the $m$ th level 1 covariates ($n$ = 2, 3, ..., 7).
-- $v_{l}$ is the level 3 residuals.
-- $u_{kl}$ is the level 2 residuals.
+- $i$ represents the $i$th individual ($i$ = 1, 2, ...,  256,871);
+- $k$ represents the $k$ th country-year ($k$ = 1, 2, ..., 80);
+- $j$ represents the $j$ th country ($j$ = 1, 2, ..., 49);
+- $m$ represents the $m$ th level 1 covariates ($m$ = 1, 2, ..., 8);
+- $n$ represents the $m$ th level 1 covariates ($n$ = 2, 3, ..., 7);
+- $v_{l}$ is the level 3 residuals;
+- $u_{kl}$ is the level 2 residuals;
 - $e_{ijk}$ is the level 1 residuals.
 
 The data analysis refers to the R script```wvs_wb_data_analysis```.
