@@ -32,7 +32,7 @@ I employed the three-level multi-level modeling, treating individual responses (
 $Trust_{ikl} = β_{000} + β_{100} * SCO_{ikl} + β_{200} * Age_{ikl} + β_{300} * Gender_{ikl} + β_{400} * Marital_{ikl}$ 
             $+ β_{500} * Employment_{ikl} + β_{600} * M_{ikl} + β_{700} * Education_{ikl} + β_{800} * Ideogloy_{ikl}$ 
             $+ β_{010} * Gini_{kl} + β_{020} * Gdp_{ikl} + β_{030} * Population_{kl} + β_{040} * Density_{kl}$ 
-            $+ β_{050} * Poverty_{kl} + β_{060} * Unemploymen_{tkl} + β_{070} * Year_{kl}$ 
+            $+ β_{050} * Poverty_{kl} + β_{060} * Unemployment_{tkl} + β_{070} * Year_{kl}$ 
             $+ v_{l} + u_{kl} + e_{ikl}$
 
 Which is equivalent to:
@@ -42,7 +42,7 @@ $Trust_{ikl} = β_{000} + β_{010}*Gini_{kl} * β_{m00} * L1COV_{ikl} + β_{0n0}
 
 
 Where:
-- $i$ represents the $i$th individual ($i$ = 1, 2, ...,  256,871);
+- $i$ represents the $i$ th individual ($i$ = 1, 2, ...,  256,871);
 - $k$ represents the $k$ th country-year ($k$ = 1, 2, ..., 80);
 - $j$ represents the $j$ th country ($j$ = 1, 2, ..., 49);
 - $m$ represents the $m$ th level 1 covariates ($m$ = 1, 2, ..., 8);
