@@ -3,7 +3,7 @@ library(performance)
 library(lmerTest)
 
 ## Read the csv file
-df_wvs_wb <- read.csv("/Users/jinyanxiang/Desktop/Dissertation/Education/Archival Data Analysis/wvs_wb_master.csv")
+df_wvs_wb <- read.csv(file_path)
 
 ## Define a function to fit and summarize linear mixed-effects models (NON-CENTERED IVs)
 fit <- function(dv, data) {
